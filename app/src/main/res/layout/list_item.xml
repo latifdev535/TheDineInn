@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+    <LinearLayout
+        android:id="@+id/infoSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/itemName"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Item Name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/price"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Price" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pricingSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoSection"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#FFE900"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:drawableRight="@drawable/add"
+                android:focusable="false"
+                android:textStyle="bold"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/list_btn_bg"
+                android:layout_weight="1"
+                android:id="@+id/increment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:text="Add" />
+
+            <TextView
+
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/increment"
+                android:text="0" />
+
+            <Button
+                android:textStyle="bold"
+                android:drawableRight="@drawable/delete"
+                android:background="@drawable/list_btn_bg"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_weight="1"
+                android:id="@+id/decrement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:text="Delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

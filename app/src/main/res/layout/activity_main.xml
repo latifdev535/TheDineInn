@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        app:tabMaxWidth="0dp"
+        app:tabMode="scrollable"
+        android:fillViewport="true"
+        app:tabGravity="fill"
+        android:layout_height="72dp">
+
+    </com.google.android.material.tabs.TabLayout>
+    <LinearLayout
+        android:id="@+id/llMainTop"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_weight="0.6"
+        app:layout_constraintRight_toRightOf="@+id/edit_tableName"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        android:text=""
+        android:textAlignment="center"
+        android:padding="2dp"
+        android:hint="search"
+        android:drawableRight="@drawable/itmsearch"
+        android:id="@+id/etSearch"
+        android:maxLength="0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></TextView>
+        <LinearLayout
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            >
+            <TextView
+                android:text=""
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:id="@+id/edit_tableName"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></TextView>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/vegan"
+            android:drawableLeft="@drawable/food"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Vegetarian"
+            android:textOff="Non Vegetarian"
+            android:textOn="Vegetarian"
+            android:textSize="10dp"
+            android:theme="@style/ThemeOverlay.MySwitchCompat"
+            android:textColor="#E97451"
+            android:textStyle="italic"
+            ></androidx.appcompat.widget.SwitchCompat>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llMainTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
