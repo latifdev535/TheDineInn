@@ -36,7 +36,7 @@ public class AdminOrdersList extends AppCompatActivity implements Callback<Order
     }
 
     private void loadOrders() {
-
+// commit1
 //        List<OrderResponse> responseList = TheDineHouseConstants.getOrderResponse();
 //
 //            OrderItemAdapter orderItemAdapter = new OrderItemAdapter(this, responseList);
@@ -51,13 +51,14 @@ public class AdminOrdersList extends AppCompatActivity implements Callback<Order
         DineHouseApiInterface apiCalls = retrofit.create(DineHouseApiInterface.class);
         Call<OrderResponseInfo> pastOrderApi = apiCalls.getAllOrderAPI();
         pastOrderApi.enqueue(this);
+        // commit 2
     }
 
 
     @Override
     public void onResponse(Call<OrderResponseInfo> call, Response<OrderResponseInfo> response) {
         OrderResponseInfo orderResponseInfo = response.body();
-
+//      commit 3
         List<OrderResponse> responseList = orderResponseInfo.getData();
         if (orderResponseInfo.getStatus().equalsIgnoreCase(TheDineHouseConstants.SUCCESS) &&
                 responseList!= null) {
@@ -79,11 +80,12 @@ public class AdminOrdersList extends AppCompatActivity implements Callback<Order
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         OrderResponse selectedOrder = (OrderResponse) adapterView.getItemAtPosition(i);
-
+// commit 4
         Intent intent = new Intent(AdminOrdersList.this, Payment.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable(TheDineHouseConstants.ORDER_ID,selectedOrder);
         intent.putExtras(bundle);
         startActivity(intent);
+        // commit 5
     }
 }
