@@ -80,7 +80,7 @@ public class AdminOrdersList extends AppCompatActivity implements Callback<Order
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         OrderResponse selectedOrder = (OrderResponse) adapterView.getItemAtPosition(i);
-
+// commit 4
         Intent intent = new Intent(AdminOrdersList.this, Payment.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable(TheDineHouseConstants.ORDER_ID,selectedOrder);
