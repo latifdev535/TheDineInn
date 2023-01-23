@@ -36,7 +36,7 @@ public class AdminOrdersList extends AppCompatActivity implements Callback<Order
     }
 
     private void loadOrders() {
-
+// commit1
 //        List<OrderResponse> responseList = TheDineHouseConstants.getOrderResponse();
 //
 //            OrderItemAdapter orderItemAdapter = new OrderItemAdapter(this, responseList);
