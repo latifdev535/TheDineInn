@@ -70,7 +70,7 @@ public class DBHandler extends SQLiteOpenHelper {
 		// on below line we are creating
 		// an sqlite query and we are
 		// setting our column names
-		// along with their data types
+		// along with their data types.
 
 		String TB_CATEGORY_QUERY = "CREATE TABLE " + TB_CATEGORY + " ("
 				+ ID_COL + " INTEGER , "
