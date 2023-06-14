@@ -33,7 +33,7 @@ The App does not contain detailed descriptions of techniques that could be used 
 The App does not advocate committing acts of terrorism.
 All of the items above does not refer to user generated content.
 Contact Us
-If you have any questions or comments about this Policy or our privacy practices, or to report any violations of the Policy or abuse of the App, please contact us at privatescreenshots@shamanland.com.
+If you have any questions or comments about this Policy or our privacy practices, or to report any violations of the Policy or abuse of the App, please contact us at latifdev535@gmail.com
 
 Changes
 Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any privacy policy changes on this page, so please review it periodically. If you do not agree to any modifications to this Policy, your could immediately stop all use of the App. We will also keep prior versions of this Privacy Policy in an archive for your review.
